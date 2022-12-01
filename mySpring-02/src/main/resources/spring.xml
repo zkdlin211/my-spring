@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="userDao" class="com.cliffe.springframework.test.entity.UserDao"/>
+    <bean class="com.cliffe.springframework.test.entity.UserService">
+        <proerty name="accessKey" value="123456"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+</beans>
